@@ -41,6 +41,7 @@ class Fib extends Component {
   renderValues() {
     const entries = [];
 
+    // eslint-disable-next-line
     for (let key in this.state.values) {
       entries.push(
         <div key={key}>

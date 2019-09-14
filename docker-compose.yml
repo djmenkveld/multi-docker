@@ -5,6 +5,8 @@ services:
   redis:
     image: 'redis:latest'
   nginx:
+    depends_on:
+      - api    
     restart: always
     build:
       dockerfile: Dockerfile.dev
